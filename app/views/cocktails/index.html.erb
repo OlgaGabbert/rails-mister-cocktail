@@ -5,11 +5,12 @@
       <ul class="list-group">
         <% @cocktails.each do |cocktail| %>
           <li class="list-group-item">
-            <%= link_to cocktail.name, cocktail_path(cocktail) %>
+            <%= link_to cocktail.name, cocktail_path(cocktail), class: 'cards-link'%>
           </li>
         <% end %>
       </ul>
-      <%= link_to "Add a new Cocktail", new_cocktail_path, class: 'btn btn-primary' %>
+      <br>
+    <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary btn-lg" %>
     </div>
   </div>
 </div>
